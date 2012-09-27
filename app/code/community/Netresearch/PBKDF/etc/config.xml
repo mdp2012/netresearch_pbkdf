@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Netresearch_PBKDF>
+			<version>0.1.0</version>
+		</Netresearch_PBKDF>
+	</modules>
+    <global>
+        <resources>
+            <pbkdf_setup>
+                <setup>
+                    <module>Netresearch_PBKDF</module>
+					<class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </pbkdf_setup>
+        </resources>
+        <helpers>
+            <pbkdf>
+                <class>Netresearch_PBKDF_Helper</class>
+            </pbkdf>
+        </helpers>
+	</global>
+</config>
+
